@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac39c388ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- nav bar -->
+    <div>
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header" >Home</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="#edu" >Education</a></li>
+                <li><a href="#skills" >Skills</a></li>
+                <li><a href="#project" >Project</a></li>
+                <li><a href="#contact" >Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vishal</span> Choudhari</h1>
+                <p>Web Developer</p>
+                <div class="l">
+                    <i class="h fa-brands fa-html5 fa-2xl" style ="color: #f06529;"></i>
+                    <i class="h fa-brands fa-css3-alt fa-2xl" style="color: #2965f1;"></i>
+                    <i class="h fa-brands fa-square-js fa-2xl" style="color: #F0DB4F;"></i>
+                </div>
+                <p class="header-p">Coding Profiles</p>
+                <div class="l">
+                    <a href="https://auth.geeksforgeeks.org/user/choudhari4elr" target="_blank"><img src="img/gfgicon.svg" alt="gfg"></a>
+                    <a href="https://github.com/VishalSChoudhari" target="_blank"><img src="img/git.svg" alt="git"></a>
+                    <a href="https://www.hackerrank.com/profile/choudhari_visha1" target="_blank"><img src="img/hackerrank.svg" alt="hackerrank"></a>
+                    <a href="https://www.datacamp.com/portfolio/vishalsc099" target="_blank"><img src="img/datacamp.svg" alt="datacamp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="imgcont">
+                        <img src="img/img.jpg" >
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Vishal Choudhari, a Dedicated individual currently pursuing my Bachelor's degree in Engineering from DIT Pimpri. I am passionate about technology and constantly seek opportunities to expand my knowledge and skills in the field. I am confident in my abilities and eager to contribute to a dynamic and innovative organization. With a strong work ethic and a willingness to learn, I am determined to make a meaningful impact in the Industry.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('course')">Additional Courses & Training</p>
+                        <p class="tab-links" onclick="opentab('activities')">Extracurricular Activities</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li>
+                                <span>24-01-2023 - 01-03-2023</span><br>
+                                <p>Intern - Web Designer<br>
+                                RN WebBrand Solutions Pvt. Ltd.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="course">
+                        <ul>
+                            <li>
+                                <span>07-09-2021 - 18-09-2021</span><br>
+                                <p>Training on C and CPP Programming<br>
+                                IASDC Akurdi</p>
+                            </li>
+                            <li>
+                                <span>01-02-2022 - 28-02-2022</span><br>
+                                <p>Foundations of User Experience (UX) Design<br>
+                                Coursera | Google</p>
+                            </li>
+                            <li>
+                                <span>17-10-2022 - 17-11-2022</span><br>
+                                <p>The Complete Web Developer Course 2.0<br>
+                                Infosys | Springboard</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="activities">
+                        <ul>
+                            <li>
+                                <span>GDSC WOW Event</span><br>
+                                <p>Part of Event Management and Distribution Team</p>
+                            </li>
+                            <li>
+                                <span>Inter - Department College Sports</span><br>
+                                <p>Participated in Parakram</p>
+                            </li>
+                            <li>
+                                <span>Contest</span><br>
+                                <p>Neon Coding Contest<br>
+                                Xiaomi Ode2Code 3.0<br>
+                                Flipkart GRiD 5.0</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- education -->
+    <div id="edu">
+        <br><br><br>
+        <div class="timeline">
+            <div class="cont left-container">
+                <i class="fa-solid fa-school"></i>
+                <div class="text-box">
+                    <h2>G S S's English Medium School, Saphale</h2>
+                    <small>2017-2018 | </small>
+                    <small>SSC Board</small>
+                    <p>Percentage - 92%</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="cont right-container">
+                <i class="fa-solid fa-book-open"></i>
+                <div class="text-box">
+                    <h2>Kiran Patil Jr College of Arts, Commerce and Science, Nallasopara</h2>
+                    <small>2019-2020 | </small>
+                    <small>HSC Board</small>
+                    <p>Percentage - 76.7%</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="cont left-container">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="text-box">
+                    <h2>Dr. D. Y. Patil Institute of Technology, Pune</h2>
+                    <small>2020-2024 | </small>
+                    <small>B.E. Computer Engineering</small>
+                    <p>CGPA - 9.26</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills">
+        <br>
+        <br>
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Programming Skills</h2>
+                    <p>Proficient in JAVA, DSA, OOPs, Problem Solving</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Proficient in HTML, CSS, Bootstrap, JavaScript</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Databases</h2>
+                    <p>Proficient in SQL, MySQL, MongoDB</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Other</h2>
+                    <p>Proficient in DBMS, OS, CNS, Figma, UI/UX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project -->
+    <div id="project">
+        <br>
+        <br>
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="img/donate.jpg" alt="">
+                    <div class="layer">
+                        <h2>Donation Website</h2>
+                        <p>The project is a quiz website developed using HTML, CSS, JavaScript.It's user-friendly donation website designed to provide a seamless experience for both donors and beneficiaries. This platform aims to connect compassionate individuals with causes they care about, facilitating meaningful contributions to various charitable organizations, fundraisers, and social initiatives.</p>
+                        <a href="https://github.com/VishalSChoudhari/Donation-Site" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/quiz.jpg" alt="">
+                    <div class="layer">
+                        <h2>Quiz Website</h2>
+                        <p>The project is a quiz website developed using HTML, CSS, JavaScript, PHP, and MySQL. It consists of a registration section where users can
+                            create an account by providing their details. The website also includes a login for users to securely log into their accounts. Additionally, there is a separate admin login page for administrators to manage the quiz content and user accounts.</p>
+                        <a href="https://github.com/VishalSChoudhari/Online-quiz-website" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/food.jpg" alt="">
+                    <div class="layer">
+                        <h2>Food Ordering Website</h2>
+                        <p>This website a dynamic and user-centric food ordering website designed to bring convenience and satisfaction to food enthusiasts. Leveraging the power of HTML, CSS, and JavaScript, this platform aims to provide a seamless and delightful experience for users seeking a diverse range of cuisines from local restaurants, ensuring a hassle-free ordering process.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- contact -->
+    <div id="contact">
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> choudhari.vishal08@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9960163489</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Sant Tukaram Nagar Pimpri, 411018</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vishal-choudhari-94363621b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vishal_sc_2111" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/vishalchoudhari08" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="img/Vishal Resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class=" btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2023 Vishal Choudhari</p>
+        </div>
+    </footer>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // side menu
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <!-- for contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjLM13yHqRYwDSgWwzZ6WKVgzSMNFkeVzzKm4O_so1JHXc6_QDMOuca-iG4lxSKDz8tQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+
+    </script>
+</body>
+</html>
